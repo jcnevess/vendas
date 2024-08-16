@@ -31,6 +31,7 @@ h2 {
 
 .hero {
   display: flex;
+  flex-direction: row-reverse;
   height: 100dvh;
   align-items: center;
   margin-inline: 2rem;
@@ -72,7 +73,7 @@ h2 {
 .rec-profiles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2rem;
 }
 
@@ -96,11 +97,13 @@ h2 {
 .rec-avatar img {
   width: 120px;
   border-radius: 50%;
+  border: solid 5px white;
 }
 
 .rec-name {
   font-weight: bold;
   font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .rec-place {
@@ -170,5 +173,13 @@ h2 {
   .hero-info {
     display: flex;
     flex-direction: column;
+  }
+
+  .features {
+    font-size: 1rem;
+  }
+
+  .price-label {
+    width: 280px;
   }
 }
